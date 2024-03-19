@@ -1,5 +1,9 @@
 :root {
     --branco-puro: white;
     --cinza-links: rgb(161, 161, 161);
+    --cinza-texto:rgb(99, 99, 99);
     --azul-links: #003db4;
+    --laranja: #f94107;
+    --cinza-escuro: #252525;
+    --off-white: rgb(226, 226, 226);
 }
