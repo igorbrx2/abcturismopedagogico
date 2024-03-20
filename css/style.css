@@ -27,6 +27,7 @@
   font-weight: 400;
   font-style: normal;
   padding: 10px 15px;
+  transition: .4s;
 }
 
 #menu a:hover {
@@ -85,6 +86,7 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
+  transition: .4s;
 }
 
 #intro button:hover {
