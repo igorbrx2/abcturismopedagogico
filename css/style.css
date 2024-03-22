@@ -27,7 +27,7 @@
   font-weight: 400;
   font-style: normal;
   padding: 10px 15px;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 #menu a:hover {
@@ -86,7 +86,7 @@
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 #intro button:hover {
@@ -317,10 +317,144 @@
 
 #ftr-ld-dir p {
   margin-top: 15px;
-  font-size: .8rem;
+  font-size: 0.8rem;
+}
+/* FIM DE FOOTER */
+
+/* --------------------- PÁGINA SOBRE */
+
+/* TITULO DA PÁGINA */
+#sobre-titulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 300px;
+  background: url(/PS/imgs/pico-do-cabugi-sobre-desfocado.jpg) no-repeat 50% 40%;
+  background-size: cover;
+}
+/* FIM DE TITULO DA PÁGINA */
+
+/* NOSSA HISTÓRIA */
+#nossa-historia .titulo-laranja {
+  width: 250px;
 }
 
+#nossa-historia {
+  background-color: var(--off-white);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#sobre {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+#sobre img {
+  width: 500px;
+  height: 300px;
+  object-fit: cover;
+  object-position: 50% 70%;
+}
+
+#sobre p {
+  width: 500px;
+  font-size: 1.2rem;
+  line-height: 1.4;
+  color: var(--cinza-texto);
+}
+/* FIM DE NOSSA HISTÓRIA */
+
+/* EQUIPE */
+#nossa-equipe {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+#equipe {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+}
+
+.card-membro-equipe {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-membro-equipe img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.card-membro-equipe h2 {
+  font-weight: bold;
+  color: var(--cinza-escuro);
+  letter-spacing: .5px;
+  margin-bottom: 10px;
+}
+
+.card-membro-equipe p {
+  color: var(--cinza-texto);
+  font-size: .9rem;
+  line-height: 1.3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ESTILOS GLOBAIS */
+
+.container-padrão {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.titulo-paginas {
+  color: var(--branco-puro);
+  text-align: center;
+  font-weight: 900;
+  font-size: 4.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.49);
+}
 
 .titulo-laranja {
   margin: 50px;
