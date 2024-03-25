@@ -133,7 +133,9 @@ table {
 h1,
 h2,
 p,
-a {
+a,
+span,
+button {
   font-family: "lato", sans-serif;
 }
 
