@@ -374,7 +374,7 @@
 }
 
 .sobre-img img {
-  width: 100%
+  width: 100%;
 }
 
 #sobre p {
@@ -471,7 +471,12 @@
 }
 
 .ft-preco-data img {
-  width: 700px;
+  width: 100%;
+}
+
+.pct-princ-img {
+  max-width: 700px;
+  width: auto;
 }
 
 .data {
@@ -485,6 +490,7 @@
 }
 
 .data p {
+  text-wrap: wrap;
   font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -493,6 +499,7 @@
 
 .preco {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -539,6 +546,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 .dsc-reserve {
@@ -616,7 +624,6 @@
 }
 
 .linha-horizontal {
-  display: block;
   width: 665px;
   border-bottom: solid 2px var(--cinza-links);
 }
@@ -626,7 +633,7 @@
   align-items: center;
   border: solid 1px var(--off-white);
   background-color: var(--off-white);
-  max-width: 800px;
+  max-width: 700px;
   width: 100%;
   margin: 20px auto;
   border-radius: 45px;
@@ -681,9 +688,9 @@
 }
 
 .post-card p {
-  font-size: .9rem;
+  font-size: 0.9rem;
   color: var(--cinza-texto);
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
   line-height: 1.2;
   padding: 0px 10px 10px 10px;
 }
@@ -772,10 +779,6 @@ P {
 .blog-post a:hover {
   color: var(--cinza-texto);
 }
-
-
-
-
 
 /* ESTILOS GLOBAIS */
 
