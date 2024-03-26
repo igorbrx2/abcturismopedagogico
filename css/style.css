@@ -68,6 +68,8 @@
   font-weight: 900;
   font-size: 4.5rem;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.49);
+  max-width: 1200px;
+  width: auto;
 }
 
 #intro p {
@@ -357,6 +359,7 @@
 }
 
 #sobre {
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -365,16 +368,20 @@
   margin-bottom: 50px;
 }
 
-#sobre img {
-  width: 500px;
-  height: 300px;
-  object-fit: cover;
-  object-position: 50% 70%;
+.sobre-img {
+  max-width: 500px;
+  width: auto;
+}
+
+.sobre-img img {
+  width: 100%
 }
 
 #sobre p {
-  width: 500px;
-  font-size: 1.2rem;
+  max-width: 500px;
+  width: auto;
+  text-wrap: wrap;
+  font-size: 1.3rem;
   line-height: 1.4;
   color: var(--cinza-texto);
 }
