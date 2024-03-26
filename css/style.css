@@ -451,6 +451,8 @@ padding-top: 64px;
 .container-principal {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   gap: 30px;
 }
 
@@ -576,9 +578,92 @@ font-weight: bold;
   width: 30px;
 }
 
+/* --------------------- PÁGINA BLOG */
+
+#blog-titulo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  width: 100%;
+  height: 300px;
+  padding-top: 64px;
+  background: url(../imgs/mulher-lendo-blog.jpg) no-repeat 50% 40%;
+  background-size: cover;
+}
 
 
+/* --------------------- BLOG POST */
 
+.blog-post {
+  max-width: 1000px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 50px;
+  gap: 5px;
+}
+
+.blog-post img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.blog-post H1, H2, H3, P {
+  text-wrap: wrap;
+}
+
+.blog-post h1 {
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.3;
+  font-weight: 900;
+  color: var(--cinza-escuro);
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.blog-post h2 {
+  font-size: 2rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  line-height: 1.2;
+  color: var(--cinza-escuro);
+}
+
+.blog-post h3 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+  color: var(--cinza-escuro);
+}
+
+.blog-post p {
+  font-size: 1.2rem;
+  line-height: 1.3;
+  letter-spacing: .5px;
+  color: var(--cinza-texto);
+}
+
+.blog-post a {
+  color: var(--cinza-escuro);
+  font-weight: 700;
+  transition: .2s;
+}
+
+.blog-post a:hover {
+  color: var(--cinza-texto);
+}
 
 
 
