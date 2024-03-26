@@ -136,7 +136,8 @@ h3,
 p,
 a,
 span,
-button {
+button,
+input {
   font-family: "lato", sans-serif;
 }
 
