@@ -18,57 +18,47 @@
     <!-- FIM DE FONTES -->
   </head>
   <body>
-    <!-- HEADER -->
-    <header id="header">
-      <a id="logo" href="#"><img src="./imgs/logo.png" alt="" /></a>
-      <nav id="menu">
-        <ul>
-          <li><a href="./index.html">INICIO</a></li>
-          <li>
-            <a href="./sobre.html">SOBRE</a>
-          </li>
-          <li>
-            <a href="./pacotes.html">PACOTES</a>
-          </li>
-          <li>
-            <a
-              style="
-                color: var(--branco-puro);
+        <!-- HEADER -->
+        <header id="header">
+          <a id="logo" href="#"><img src="./imgs/logo.png" alt="" /></a>
+          <nav id="navegacao">
+            <button id="btn-mobile">Menu <span id="btn-burger"></span></button>
+            <ul id="menu">
+              <li><a href="./index.html">INICIO</a></li>
+              <li><a href="./sobre.html">SOBRE</a></li>
+              <li><a href="./pacotes.html">PACOTES</a></li>
+              <li><a style="color: var(--branco-puro);
                 background-color: var(--azul-links);
-                border-radius: 5px;
-                padding: 10px 15px;
-              "
-              href="./blog.html"
-              >BLOG</a
-            >
-          </li>
-        </ul>
-      </nav>
-      <ul class="rd-sociais">
-        <li>
-          <a
-            href="https://api.whatsapp.com/send/?phone=5584988075272&text&type=phone_number&app_absent=0"
-            target="_blank"
-            ><img src="./imgs/wpp.png" alt=""
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://www.instagram.com/abcturismopedagogico/"
-            target="_blank"
-            ><img src="./imgs/ig.png" alt=""
-          /></a>
-        </li>
-        <li>
-          <a
-            href="https://www.threads.net/@abcturismopedagogico"
-            target="_blank"
-            ><img src="./imgs/thds.png" alt=""
-          /></a>
-        </li>
-      </ul>
-    </header>
-    <!-- FIM DE HEADER -->
+                border-radius: 5px; 
+                padding: 10px 15px;" href="./blog.html">BLOG</a></li>
+            </ul>
+          </nav>
+    
+          <ul class="rd-sociais">
+            <li>
+              <a
+                href="https://api.whatsapp.com/send/?phone=5584988075272&text&type=phone_number&app_absent=0"
+                target="_blank"
+                ><img src="./imgs/wpp.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/abcturismopedagogico/"
+                target="_blank"
+                ><img src="./imgs/ig.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a
+                href="https://www.threads.net/@abcturismopedagogico"
+                target="_blank"
+                ><img src="./imgs/thds.png" alt=""
+              /></a>
+            </li>
+          </ul>
+        </header>
+        <!-- FIM DE HEADER -->
 
     <!-- IMAGEM DE BLOG -->
     <section id="blog-titulo">
@@ -106,74 +96,84 @@
     <!-- FIM DA LINHA DIVISÓRIA PARA POSTS -->
 
     <!-- TODOS OS TEXTOS -->
+
     <div class="pesquisa">
       <label for="searchInput">
         <img src="./imgs/icone-busca.png" alt="" />
       </label>
-      <input type="text" id="searchInput" placeholder="Pesquisar por texto" />
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="Pesquisar por texto"
+        onkeyup="search()"
+      />
     </div>
 
-    <div id="posts-container">
+    <ul id="posts-container">
+      <li class="post-card">
+        <a href="./">
+          <div class="post-card-img">
+            <img src="./imgs/galo-da-madrugada.jpeg" alt="" />
+          </div>
+          <h2>Galo da Madrugada</h2>
+          <p>
+            O Galo da Madrugada é um dos maiores blocos de carnaval do mundo,
+            originário de Recife, Brasil. Fundado em 1978, atrai milhões de
+            foliões com seu desfile animado, música frevo e cores vibrantes,
+            celebrando a cultura nordestina em uma festa única e contagiante.
+          </p>
+          <span>+ Leia Mais</span>
+        </a>
+      </li>
 
-        <a href=""></a>
-      <div class="post-card">
-        <div class="post-card-img">
-          <img src="./imgs/galo-da-madrugada.jpeg" alt="" />
-        </div>
-        <h2>Galo da Madrugada</h2>
-        <p>
-          O Galo da Madrugada é um dos maiores blocos de carnaval do mundo,
-          originário de Recife, Brasil. Fundado em 1978, atrai milhões de
-          foliões com seu desfile animado, música frevo e cores vibrantes,
-          celebrando a cultura nordestina em uma festa única e contagiante.
-        </p>
-        <span>+ Leia Mais</span>
-      </div>
-    </a>
+      <li class="post-card">
+        <a href="./">
+          <div class="post-card-img">
+            <img src="./imgs/vila-mangueira-pipa.png" alt="" />
+          </div>
+          <h2>Praia da Pipa</h2>
+          <p>
+            Localizada no Rio Grande do Norte, a Praia da Pipa encanta com suas
+            falésias, águas cristalinas e vida marinha diversificada. Popular
+            entre surfistas e amantes da natureza, é um destino imperdível para
+            quem busca o paraíso tropical no nordeste brasileiro.
+          </p>
+          <span>+ Leia Mais</span>
+        </a>
+      </li>
 
-      <a href="">
-      <div class="post-card">
-        <div class="post-card-img">
-          <img src="./imgs/vila-mangueira-pipa.png" alt="" />
-        </div>
-        <h2>Praia da Pipa</h2>
-        <p>
-          Localizada no Rio Grande do Norte, a Praia da Pipa encanta com suas
-          falésias, águas cristalinas e vida marinha diversificada. Popular
-          entre surfistas e amantes da natureza, é um destino imperdível para
-          quem busca o paraíso tropical no nordeste brasileiro.
-        </p>
-        <span>+ Leia Mais</span>
-      </div>
-    </a>
+      <li class="post-card">
+        <a href="./">
+          <div class="post-card-img">
+            <img src="./imgs/ouro-preto.webp" alt="" />
+          </div>
+          <h2>Ouro Preto</h2>
+          <p>
+            Ouro Preto, em Minas Gerais, é uma joia colonial brasileira, famosa
+            por sua arquitetura barroca, igrejas históricas e ruas de
+            paralelepípedo. Patrimônio Mundial da UNESCO, a cidade cativa com
+            sua rica história e cultura vibrante.
+          </p>
+          <span>+ Leia Mais</span>
+        </a>
+      </li>
 
-      <a href="">
-      <div class="post-card">
-        <div class="post-card-img">
-          <img src="./imgs/ouro-preto.webp" alt="" />
-        </div>
-        <h2>Ouro Preto</h2>
-        <p>
-            Ouro Preto, em Minas Gerais, é uma joia colonial brasileira, famosa por sua arquitetura barroca, igrejas históricas e ruas de paralelepípedo. Patrimônio Mundial da UNESCO, a cidade cativa com sua rica história e cultura vibrante.
-        </p>
-        <span>+ Leia Mais</span>
-      </div>
-    </a>
-
-      <a href="./blog-post.html">
-      <div class="post-card">
-        <div class="post-card-img">
-          <img src="./imgs/pingo-mei-dia.png" alt="" />
-        </div>
-        <h2>Pingo da Mei Dia</h2>
-        <p>
-            No coração do sertão nordestino, uma cidade resplandece em cores vivas e energia contagiante: Mossoró, no Rio Grande do Norte. E se há uma celebração que encapsula toda a essência vibrante e calorosa dessa cidade, é o "Pingo da Mei Dia".
-        </p>
-        <span>+ Leia Mais</span>
-      </div>
-    </a>
-
-    </div>
+      <li class="post-card">
+        <a href="./blog-post.html">
+          <div class="post-card-img">
+            <img src="./imgs/pingo-mei-dia.png" alt="" />
+          </div>
+          <h2>Pingo da Mei Dia</h2>
+          <p>
+            No coração do sertão nordestino, uma cidade resplandece em cores
+            vivas e energia contagiante: Mossoró, no Rio Grande do Norte. E se
+            há uma celebração que encapsula toda a essência vibrante e calorosa
+            dessa cidade, é o "Pingo da Mei Dia".
+          </p>
+          <span>+ Leia Mais</span>
+        </a>
+      </li>
+    </ul>
 
     <!-- FOOTER -->
     <footer id="footer">
@@ -192,5 +192,7 @@
       </div>
     </footer>
     <!-- FIM DE FOOTER -->
+
+    <script src="./script.js"></script>
   </body>
 </html>

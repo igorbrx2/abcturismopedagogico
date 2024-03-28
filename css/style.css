@@ -8,19 +8,21 @@
 }
 
 #header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   z-index: 10;
   width: 100%;
   height: 64px;
-  display: flex;
   background-color: var(--branco-puro);
-  justify-content: space-evenly;
-  align-items: center;
   position: fixed;
 }
 
-#menu ul {
+
+#menu {
   display: flex;
   gap: 70px;
+  
 }
 
 #menu a {
@@ -703,6 +705,7 @@
   align-self: flex-end;
   position: absolute;
   bottom: -5px;
+  right: -5px;
 }
 
 /* --------------------- BLOG POST */
@@ -778,6 +781,99 @@ P {
 
 .blog-post a:hover {
   color: var(--cinza-texto);
+}
+
+/* botao mobile */
+
+#btn-mobile {
+  display: none;
+}
+
+@media (max-width: 767px) {
+
+  #btn-mobile {
+    margin-right: 100px;
+    gap: 10px;
+    display: flex;
+    padding: .5rem 1rem;
+    font-size: 1rem;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  #btn-burger {
+    border-top: 2px solid var(--cinza-escuro);
+    width: 20px;
+  }
+
+  #btn-burger::after, #btn-burger::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: currentColor;
+    margin-top: 5px;
+    position: relative;
+    transition: .5s;
+  }
+
+  #navegacao.active #btn-burger {
+    border-top-color: transparent ;
+  }
+
+  #navegacao.active #btn-burger::before {
+    transform: rotate(135deg);
+  }
+
+  #navegacao.active #btn-burger::after {
+    transform: rotate(-135deg);
+    top: -7px;
+  }
+
+  #menu {
+    display: block;
+    left: 0px;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 60px;
+    top: 60px;
+    height: 0;
+    transition: .6s;
+    visibility: hidden;
+    overflow-y: auto;
+    position: absolute;
+    width: 100vh;
+    background: var(--branco-puro);
+  }
+
+  #menu li {
+    margin-bottom: 30px;
+  }
+
+.rd-sociais {
+    display: none
+
+  }
+
+  #header {
+    justify-content: space-between;
+  }
+
+  #logo {
+    margin-left: 100px;
+  }
+
+  #navegacao.active #menu {
+    display: block;
+    height: calc(100vh - 80px);
+    visibility: visible;
+  }
+
+
+
+
+
 }
 
 /* ESTILOS GLOBAIS */
