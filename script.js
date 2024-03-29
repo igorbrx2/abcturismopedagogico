@@ -1,3 +1,53 @@
+
+// Owl Carousel
+$(document).ready(function(){
+  $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    responsiveClass:true,
+    center: true,
+    nav: true,
+    responsive:{
+        0:{
+            items:1,
+        },
+        600:{
+            items:3,
+        },
+        1000:{
+            items:5,
+        }
+    }
+})
+});
+
+
+// EVIDENCIAR AO CLICAR (DEPOIMENTOS, PACOTES ETC)
+
+$('[data-group]').each(function(){
+    var $allTarget = $(this).find('[data-target]'),
+        $allClick = $(this).find('[data-click]'),
+        activeClass = 'active';
+  
+        $allTarget.first().addClass(activeClass);
+        $allClick.first().addClass(activeClass);
+  
+        $allClick.click(function(e){
+          e.preventDefault();
+  
+          var id = $(this).data('click'),
+              $target = $('[data-target="' + id + '"]');
+  
+        $allClick.removeClass(activeClass);
+        $allTarget.removeClass(activeClass);
+  
+        $target.addClass(activeClass);
+        $(this).addClass(activeClass);
+
+            
+        });
+  });
+
 // BARRA DE PESQUISA
 
 function search() {

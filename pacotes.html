@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/color.css" />
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
 
     <!-- FONTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -18,47 +19,55 @@
     <!-- FIM DE FONTES -->
   </head>
   <body>
-        <!-- HEADER -->
-        <header id="header">
-          <a id="logo" href="#"><img src="./imgs/logo.png" alt="" /></a>
-          <nav id="navegacao">
-            <button id="btn-mobile">Menu <span id="btn-burger"></span></button>
-            <ul id="menu">
-              <li><a href="./index.html">INICIO</a></li>
-              <li><a href="./sobre.html">SOBRE</a></li>
-              <li><a style="color: var(--branco-puro);
+    <!-- HEADER -->
+    <header id="header">
+      <a id="logo" href="#"><img src="./imgs/logo.png" alt="" /></a>
+      <nav id="navegacao">
+        <button id="btn-mobile">Menu <span id="btn-burger"></span></button>
+        <ul id="menu">
+          <li><a href="./index.html">INICIO</a></li>
+          <li><a href="./sobre.html">SOBRE</a></li>
+          <li>
+            <a
+              style="
+                color: var(--branco-puro);
                 background-color: var(--azul-links);
-                border-radius: 5px; 
-                padding: 10px 15px;" href="./pacotes.html">PACOTES</a></li>
-              <li><a href="./blog.html">BLOG</a></li>
-            </ul>
-          </nav>
-    
-          <ul class="rd-sociais">
-            <li>
-              <a
-                href="https://api.whatsapp.com/send/?phone=5584988075272&text&type=phone_number&app_absent=0"
-                target="_blank"
-                ><img src="./imgs/wpp.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/abcturismopedagogico/"
-                target="_blank"
-                ><img src="./imgs/ig.png" alt=""
-              /></a>
-            </li>
-            <li>
-              <a
-                href="https://www.threads.net/@abcturismopedagogico"
-                target="_blank"
-                ><img src="./imgs/thds.png" alt=""
-              /></a>
-            </li>
-          </ul>
-        </header>
-        <!-- FIM DE HEADER -->
+                border-radius: 5px;
+                padding: 10px 15px;
+              "
+              href="./pacotes.html"
+              >PACOTES</a
+            >
+          </li>
+          <li><a href="./blog.html">BLOG</a></li>
+        </ul>
+      </nav>
+
+      <ul class="rd-sociais">
+        <li>
+          <a
+            href="https://api.whatsapp.com/send/?phone=5584988075272&text&type=phone_number&app_absent=0"
+            target="_blank"
+            ><img src="./imgs/wpp.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.instagram.com/abcturismopedagogico/"
+            target="_blank"
+            ><img src="./imgs/ig.png" alt=""
+          /></a>
+        </li>
+        <li>
+          <a
+            href="https://www.threads.net/@abcturismopedagogico"
+            target="_blank"
+            ><img src="./imgs/thds.png" alt=""
+          /></a>
+        </li>
+      </ul>
+    </header>
+    <!-- FIM DE HEADER -->
 
     <!-- IMAGEM DE PACOTES -->
     <section id="pacotes-titulo">
@@ -66,61 +75,121 @@
     </section>
     <!-- FIM DE IMAGEM DE PACOTES -->
 
-    <!-- PACOTE EM EVIDÊNCIA -->
-    <article id="pct-principal" class="container-padrao">
-      <h1 class="titulo-laranja">HOTEL THERMAS</h1>
-      <div class="container-principal">
-      <div class="ft-preco-data">
-        <div class="pct-princ-img">
-        <img src="./imgs/thermas.jpg" alt="" />
-      </div>
-        <div class="preco-data">
-          <div class="data">
-            <img src="/imgs/icone-calendario.png" alt="" />
-            <p>11 a 12/05/24</p>
-          </div>
-          <div class="preco">
-            <h2>valores por pessoa</h2>
-            <div class="valores">
-              <div class="prc">
-                <span>R$ 469,00</span>
-                <p>APT DUPLO</p>
+    <!-- PACOTES EM EVIDÊNCIA -->
+    <div id="pct-principal" data-group="evidencia">
+      <!-- hotel thermas -->
+      <article class="pct-principal" data-target="thermas">
+        <h1 class="titulo-laranja">HOTEL THERMAS</h1>
+        <div class="container-principal">
+          <div class="ft-preco-data">
+            <div class="pct-princ-img">
+              <img src="./imgs/thermas.jpg" alt="" />
+            </div>
+            <div class="preco-data">
+              <div class="data">
+                <img src="/imgs/icone-calendario.png" alt="" />
+                <p>11 a 12/05/24</p>
               </div>
-              <div class="prc">
-                <span>R$ 499,00</span>
-                <p>APT TRIPLO</p>
-              </div>
-              <div class="prc">
-                <span>R$ 649,00</span>
-                <p>APT EXCLUSIVO</p>
+              <div class="preco">
+                <h2>valores por pessoa</h2>
+                <div class="valores">
+                  <div class="prc">
+                    <span>R$ 469,00</span>
+                    <p>APT DUPLO</p>
+                  </div>
+                  <div class="prc">
+                    <span>R$ 499,00</span>
+                    <p>APT TRIPLO</p>
+                  </div>
+                  <div class="prc">
+                    <span>R$ 649,00</span>
+                    <p>APT EXCLUSIVO</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <div class="dsc-reserve">
+            <p>
+              Leve sua mãe a um passeio inesquecível em um dos hotéis mais
+              famosos do estado do Rio Grande do Norte. O Hotel Thermas,
+              localizado na cidade de Mossoró, é famoso pelo seu parque e
+              piscinas termais.<br />
+              <br /><strong>O pacote inclui</strong><br />
+              - Transporte categoria turismo;<br />
+              - Uma diária no Hotel Thermas com café da manhã;<br />
+              - Almoço no domingo;<br />
+              - Passeio com guias credenciados;<br />
+              - Seguro viagem.
+            </p>
+            <button class="reserve-agr">
+              <img src="/imgs/icone-carrinho.png" alt="" />
+              <span>RESERVE AGORA</span>
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="dsc-reserve">
-        <p>
-          Leve sua mãe a um passeio inesquecível em um dos hotéis mais famosos
-          do estado do Rio Grande do Norte. O Hotel Thermas, localizado na cidade
-          de Mossoró, é famoso pelo seu parque e piscinas termais.<br />
-          <br /><strong>O pacote inclui</strong><br />
-          - Transporte categoria turismo;<br> - Uma diária no Hotel Thermas com café
-          da manhã;<br> - Almoço no domingo;<br> - Passeio com guias credenciados;<br> -
-          Seguro viagem.
-        </p>
-        <button class="reserve-agr">
-          <img src="/imgs/icone-carrinho.png" alt="" />
-          <span>RESERVE AGORA</span>
-        </button>
-      </div>
-    </div>
-    </article>
-    <!-- FIM DO PACOTE EM EVIDÊNCIA -->
+      </article>
+      <!-- fim hotel thermas -->
 
-    <!-- CARROSSEL DE PACOTES -->
-    <div id="crsl-pcts">
-        <a href="/.">
-          <div class="pct-viagem">
+      <!-- porto de galinhas -->
+      <article class="pct-principal" data-target="porto-galinhas">
+        <h1 class="titulo-laranja">PORTO DE GALINHAS</h1>
+        <div class="container-principal">
+          <div class="ft-preco-data">
+            <div class="pct-princ-img">
+              <img src="./imgs/porto-galinhas.jpg" alt="" />
+            </div>
+            <div class="preco-data">
+              <div class="data">
+                <img src="/imgs/icone-calendario.png" alt="" />
+                <p>21/04/24</p>
+              </div>
+              <div class="preco">
+                <h2>valores por pessoa</h2>
+                <div class="valores">
+                  <div class="prc">
+                    <span>R$ 199,00</span>
+                    <p>FEV A ABRIL</p>
+                  </div>
+                  <div class="prc">
+                    <span>R$ 219,00</span>
+                    <p>DEMAIS MESES</p>
+                  </div>
+                  <!-- <div class="prc">
+                <span>R$ 649,00</span>
+                <p>APT EXCLUSIVO</p>
+              </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dsc-reserve">
+            <p>
+              Descubra a beleza de Porto de Galinhas, em Pernambuco. Suas praias
+              paradisíacas e águas cristalinas oferecem momentos inesquecíveis.
+              Explore recifes naturais, desfrute de deliciosos frutos do mar e
+              mergulhe em piscinas naturais repletas de vida marinha. Uma
+              experiência única aguarda por você!<br />
+              <br /><strong>O pacote inclui</strong><br />
+              - Transporte categoria turismo;
+              <br />
+              - Passeio com guias credenciados;<br />
+              - Seguro viagem.
+            </p>
+            <button class="reserve-agr">
+              <img src="/imgs/icone-carrinho.png" alt="" />
+              <span>RESERVE AGORA</span>
+            </button>
+          </div>
+        </div>
+      </article>
+      <!-- fim porto de galinhas -->
+
+      <!-- CARROSSEL DE PACOTES -->
+      <div class="carousel-pcts slider">
+<div class="owl-carousel">
+        <div class="pct-viagem slider-card" data-click="thermas">
+          <a href="#">
             <h2>Dia das Mães<br />Hotel Thermas</h2>
             <img src="./imgs/thermas.jpg" alt="" />
             <p class="a-partir-de">A partir de <strong>R$ 469,00</strong></p>
@@ -132,11 +201,12 @@
               - Tour com guias credenciados
             </p>
             <span>+</span>
-          </div>
-        </a>
+          </a>
+        </div>
 
-        <a href="/.">
-          <div class="pct-viagem">
+        <div class="pct-viagem slider-card" data-click="porto-galinhas">
+          <div class="d-flex justify-content-center align-itens-center mb-4">
+          <a href="#">
             <h2>PORTO DE GALINHAS<br />BATE-VOLTA</h2>
             <img src="./imgs/port-de-galinhas.webp" alt="" />
             <p class="a-partir-de">A partir de <strong>R$ 199,00</strong></p>
@@ -146,11 +216,13 @@
               - Seguro viagem<br />
             </p>
             <span>+</span>
-          </div>
-        </a>
+          </a>
+        </div>
+        </div>
 
-        <a href="/.">
-          <div class="pct-viagem">
+        <div class="pct-viagem slider-card">
+          <div class="d-flex justify-content-center align-itens-center mb-4">
+          <a href="#">
             <h2>praia bonita<br />resort (day use)</h2>
             <img src="./imgs/praia-bonita.jpg" alt="" />
             <p class="a-partir-de">A partir de <strong>R$ 209,00</strong></p>
@@ -162,10 +234,138 @@
               - Seguro viagem individual
             </p>
             <span>+</span>
+          </a>
           </div>
-        </a>
-      </div>
-    <!-- FIM DO CARROSSEL DE PACOTES -->
+        </div>
+
+        <div class="pct-viagem slider-card">
+          <div class="d-flex justify-content-center align-itens-center mb-4">
+          <a href="#">
+            <h2>Pingo da <br />Mei Dia</h2>
+            <img src="./imgs/pingo-mei-dia.png" alt="" />
+            <p class="a-partir-de">A partir de <strong>R$ 589,00</strong></p>
+            <p class="pct-viagem-ctd">
+              - Transporte categoria turismo<br />
+              - Duas diárias com café da manhã no Sabinos Palace Hotel<br />
+              - Tour histórico<br />
+              - Guias credenciados<br />
+              - Seguro viagem individual
+            </p>
+            <span>+</span>
+          </a>
+          </div>
+        </div>
+
+        <div class="pct-viagem slider-card">
+          <div class="d-flex justify-content-center align-itens-center mb-4">
+          <a href="#">
+            <h2>Festival de Fondue<br />Martins</h2>
+            <img src="./imgs/martins.jpg" alt="" />
+            <p class="a-partir-de">A partir de <strong>R$ 1599,00</strong></p>
+            <p class="pct-viagem-ctd">
+              - Transporte categoria turismo<br />
+              - Estadia completa com todas as refeições no Apt luxo do Hotel
+              Serrano<br />
+              - Guias credenciados<br />
+              - Ingresso no Museu da cidade - Seguro viagem individual
+            </p>
+            <span>+</span>
+          </a>
+          </div>
+        </div>
+
+        <div class="pct-viagem slider-card">
+          <div class="d-flex justify-content-center align-itens-center mb-4">
+          <a href="#">
+            <h2>
+              Olinda, Recife<br />
+              e Oficina de Brennand
+            </h2>
+            <img src="./imgs/olinda.webp" alt="" />
+            <p class="a-partir-de">A partir de <strong>R$ 169,00</strong></p>
+            <p class="pct-viagem-ctd">
+              - Transporte categoria turismo<br />
+              - Água à bordo<br />
+              - Guias credenciados<br />
+              - Seguro viagem individual
+            </p>
+            <span>+</span>
+          </a>
+          </div>
+        </div>
+
+        <div class="pct-viagem slider-card">
+          <div class="d-flex justify-content-center align-itens-center mb-4">
+          <a href="#">
+            <h2>Fortaleza<br />para lazer e compras</h2>
+            <img src="./imgs/fortaleza.jpg" alt="" />
+            <p class="a-partir-de">A partir de <strong>R$ 849,00</strong></p>
+            <p class="pct-viagem-ctd">
+              - Transporte categoria turismo<br />
+              - 3 diárias no Hotel Praia Centro com café da manhã<br />
+              - City Tour e Praia do Futuro<br />
+              - Guias Credenciados - Seguro viagem individual
+            </p>
+            <span>+</span>
+          </a>
+          </div>
+        </div>
+
+        <div class="pct-viagem slider-card">
+          <div class="d-flex justify-content-center align-itens-center mb-4">
+          <a href="#">
+            <h2>Salvador<br />visite a boa terra</h2>
+            <img src="./imgs/salvador.jpg" alt="" />
+            <p class="a-partir-de">A partir de <strong>R$ 1299,00</strong></p>
+            <p class="pct-viagem-ctd">
+              - Transporte luxo turismo<br />
+              - 3 diárias com café da manhã no Hotel Portobello Ondina Praia<br />
+              - City Tour histórico com guia local credenciado<br />
+              - Brinde exclusivo personalizado da ABC Turismo <br />
+            </p>
+            <span>+</span>
+          </a>
+          </div>
+        </div>
+
+        <div class="pct-viagem slider-card">
+          <div class="d-flex justify-content-center align-itens-center mb-4">
+          <a href="#">
+            <h2>Belo Horizonte e<br />cidades históricas de MG</h2>
+            <img src="./imgs/ouro-preto.jpeg" alt="" />
+            <p class="a-partir-de">A partir de <strong>R$ 599,00</strong></p>
+            <p class="pct-viagem-ctd">
+              - Transporte categoria turismo<br />
+              - 4 diárias com café da manhã<br />
+              - Guias credenciados<br />
+              - Aéreo ida e Volta (com taxas e 23kg bagagem) <br />
+              - Seguro viagem individual
+            </p>
+            <span>+</span>
+          </a>
+          </div>
+        </div>
+
+        <div class="pct-viagem slider-card">
+          <a href="#">
+            <div class="d-flex justify-content-center align-itens-center mb-4">
+            <h2>Gramado<br />Serra Gaúcha</h2>
+            <img src="./imgs/gramado.jpg" alt="" />
+            <p class="a-partir-de">
+              A partir de 12x <strong>R$ 223,75</strong>
+            </p>
+            <p class="pct-viagem-ctd">
+              - Vôo ida e volta<br />
+              - 4 diárias em hotel com café da manhã<br />
+              - Assessoria e coordenador da ABC Turismo em tempo integral<br />
+            </p>
+            <span>+</span>
+          </a>
+        </div>
+        </div>
+      <!-- FIM DO CARROSSEL DE PACOTES -->
+    </div>
+    <!-- FIM DO PACOTE EM EVIDÊNCIA -->
 
     <!-- FOOTER -->
     <footer id="footer">
@@ -184,7 +384,8 @@
       </div>
     </footer>
     <!-- FIM DE FOOTER -->
-
+    <script src="./jquery.js"></script>
+    <script src="./owl.carousel.min.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>

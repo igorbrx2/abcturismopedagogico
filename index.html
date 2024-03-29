@@ -78,12 +78,12 @@
     <!-- FIM DA INTRODUÇÃO -->
 
     <!-- RESERVE JÁ! -->
-    <article id="reserve-ja">
+    <article id="reserve-ja" class="carousel-container">
       <h1 class="titulo-laranja">RESERVE JÁ!</h1>
-      <div id="crsl-pcts">
+      <div id="crsl-pcts" class="carousel">
         <a href="/.">
           <div class="pct-viagem">
-            <h2>Dia das Mães<br />Hotel Thermas</h2>
+            <h2>Dia das Mães<br>Hotel Thermas</h2>
             <img src="./imgs/thermas.jpg" alt="" />
             <p class="a-partir-de">A partir de <strong>R$ 469,00</strong></p>
             <p class="pct-viagem-ctd">
@@ -98,8 +98,8 @@
         </a>
 
         <a href="/.">
-          <div class="pct-viagem">
-            <h2>PORTO DE GALINHAS<br />BATE-VOLTA</h2>
+          <div class="pct-viagem center">
+            <h2>PORTO DE GALINHAS<br>BATE-VOLTA</h2>
             <img src="./imgs/port-de-galinhas.webp" alt="" />
             <p class="a-partir-de">A partir de <strong>R$ 199,00</strong></p>
             <p class="pct-viagem-ctd">
@@ -113,7 +113,7 @@
 
         <a href="/.">
           <div class="pct-viagem">
-            <h2>praia bonita<br />resort (day use)</h2>
+            <h2>praia bonita<br>resort (day use)</h2>
             <img src="./imgs/praia-bonita.jpg" alt="" />
             <p class="a-partir-de">A partir de <strong>R$ 209,00</strong></p>
             <p class="pct-viagem-ctd">
@@ -131,18 +131,28 @@
     <!-- FIM DE RESERVE JÁ -->
 
     <!-- DEPOIMENTOS -->
-    <article id="depoimentos">
+    <article id="depoimentos" data-group="depoimentos">
       <h1 class="titulo-cinza-vazado">DEPOIMENTOS</h1>
       <ul class="depoimentos">
-        <li><img src="./imgs/Wil.jpg" alt="" /></li>
-        <li><img src="./imgs/Igor.jpg" alt="" /></li>
-        <li><img src="./imgs/JP.jpg" alt="" /></li>
+        <li><a href="" class="depo-foto" data-click="wil"><img src="./imgs/Wil.jpg" alt="" />Wil Silva</a></li>
+        <li><a href="" class="depo-foto" data-click="igor"><img src="./imgs/Igor.jpg" alt="" />Igor Gomes</a></li>
+        <li><a href="" class="depo-foto" data-click="jp"><img src="./imgs/JP.jpg" alt="" />João Paulo</a></li>
       </ul>
-      <div class="depo-txt">
+      <div class="depo-txt" data-target="wil">
+        <p>
+          "Viajar com a ABC Turismo foi ótimo! A segurança de ter um seguro viagem individual fez toda a diferença pra mim"
+        </p>
+      </div>
+      <div class="depo-txt" data-target="igor">
         <p>
           "Adorei viajar com a ABC Turismo Pedagógico. Tive a oportunidade de
           fazer uma tour por João Pessoa e tudo foi muito bem organizado e
           seguro. Recomendo a todos!"
+        </p>
+      </div>
+      <div class="depo-txt" data-target="jp">
+        <p>
+          "Já sou cliente da ABC Turismo há muitos anos, já proporcionou muitos momentos inesquecíveis para mim e minha família, recomendo!"
         </p>
       </div>
     </article>
@@ -186,7 +196,7 @@
       </div>
     </footer>
     <!-- FIM DE FOOTER -->
-
+    <script src="./jquery.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
