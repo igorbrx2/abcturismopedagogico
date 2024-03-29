@@ -1,25 +1,4 @@
 
-// Owl Carousel
-$(document).ready(function(){
-  $('.owl-carousel').owlCarousel({
-    loop:true,
-    margin:10,
-    responsiveClass:true,
-    center: true,
-    nav: true,
-    responsive:{
-        0:{
-            items:1,
-        },
-        600:{
-            items:3,
-        },
-        1000:{
-            items:5,
-        }
-    }
-})
-});
 
 
 // EVIDENCIAR AO CLICAR (DEPOIMENTOS, PACOTES ETC)
@@ -67,11 +46,48 @@ function search() {
 
 // MENU MOBILE
 
-const btnMobile = document.getElementById('btn-mobile');
+class MobileNavbar {
 
-function toggleMenu(){
-    const nav = document.getElementById('navegacao');
-    nav.classList.toggle('active')
+  constructor(mobileMenu, navList, navLinks) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.navList = document.querySelector(navList);
+    this.navLinks = document.querySelectorAll(navLinks);
+    this.activeClass = "active";
+
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  animateLinks() {
+    this.navLinks.forEach((link) => {
+      link.style.animation
+      ? (link.style.animation = "")
+      : (link.style.animation = 'navLinkFade 0.5s ease forwards 0.3s');
+    });
+  }
+
+  handleClick() {
+    this.navList.classList.toggle(this.activeClass);
+    this.animateLinks();
+  }
+
+
+addClickEvent() {
+  this.mobileMenu.addEventListener("click", this.handleClick);
+
 }
 
-btnMobile.addEventListener('click', toggleMenu);
+
+init() {
+  if(this.mobileMenu) {
+    this.addClickEvent();
+  }
+  return this;
+}
+}
+
+const mobileNavbar = new MobileNavbar(
+  ".btn-mobile",
+  "#menu",
+  "#menu li",
+);
+mobileNavbar.init();

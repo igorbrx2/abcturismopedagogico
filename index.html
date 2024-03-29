@@ -23,7 +23,6 @@
     <header id="header">
       <a id="logo" href="#"><img src="./imgs/logo.png" alt="" /></a>
       <nav id="navegacao">
-        <button id="btn-mobile">Menu <span id="btn-burger"></span></button>
         <ul id="menu">
           <li><a style="color: var(--branco-puro);
             background-color: var(--azul-links);
@@ -58,6 +57,15 @@
           /></a>
         </li>
       </ul>
+
+      <!-- botao mobile -->
+      <div class="btn-mobile">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+      <!-- botao mobile -->
+
     </header>
     <!-- FIM DE HEADER -->
 
@@ -77,16 +85,26 @@
     </section>
     <!-- FIM DA INTRODUÇÃO -->
 
+    <!-- BOTÃO WHATSAPP  -->
+    <button class="btn-wpp">
+      <a href="">
+      <div class="botao-zap">
+      <img src="./imgs/wpp-maior.png" alt="Entre em contato pelo whatsapp">
+    </div>
+  </a>
+    </button>
+    <!-- FIM DO BOTÃO WHATSAPP -->
+
     <!-- RESERVE JÁ! -->
     <article id="reserve-ja" class="carousel-container">
       <h1 class="titulo-laranja">RESERVE JÁ!</h1>
       <div id="crsl-pcts" class="carousel">
         <a href="/.">
-          <div class="pct-viagem">
+          <div class="pct-item">
             <h2>Dia das Mães<br>Hotel Thermas</h2>
             <img src="./imgs/thermas.jpg" alt="" />
             <p class="a-partir-de">A partir de <strong>R$ 469,00</strong></p>
-            <p class="pct-viagem-ctd">
+            <p>
               - Transporte categoria turismo<br />
               - Diária no Hotel Thermas com café da manhã<br />
               - Acesso ao parque e piscinas termais<br />
@@ -98,11 +116,11 @@
         </a>
 
         <a href="/.">
-          <div class="pct-viagem center">
+          <div class="pct-item center">
             <h2>PORTO DE GALINHAS<br>BATE-VOLTA</h2>
             <img src="./imgs/port-de-galinhas.webp" alt="" />
             <p class="a-partir-de">A partir de <strong>R$ 199,00</strong></p>
-            <p class="pct-viagem-ctd">
+            <p>
               - Transporte categoria turismo<br />
               - Guias credenciados<br />
               - Seguro viagem<br />
@@ -112,11 +130,11 @@
         </a>
 
         <a href="/.">
-          <div class="pct-viagem">
+          <div class="pct-item">
             <h2>praia bonita<br>resort (day use)</h2>
             <img src="./imgs/praia-bonita.jpg" alt="" />
             <p class="a-partir-de">A partir de <strong>R$ 209,00</strong></p>
-            <p class="pct-viagem-ctd">
+            <p>
               - Transporte categoria turismo<br />
               - Day use das 9h às 16h<br />
               - Almoço com suco e sobremesa<br />

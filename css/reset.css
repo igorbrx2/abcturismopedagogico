@@ -91,6 +91,11 @@ a {
   text-decoration: none;
 }
 
+button {
+  border: none;
+  background: none;
+}
+
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -107,6 +112,7 @@ section {
 }
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 ol,
 ul {
