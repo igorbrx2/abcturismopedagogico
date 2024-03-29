@@ -1,31 +1,26 @@
-
-
-
 // EVIDENCIAR AO CLICAR (DEPOIMENTOS, PACOTES ETC)
 
-$('[data-group]').each(function(){
-    var $allTarget = $(this).find('[data-target]'),
-        $allClick = $(this).find('[data-click]'),
-        activeClass = 'active';
-  
-        $allTarget.first().addClass(activeClass);
-        $allClick.first().addClass(activeClass);
-  
-        $allClick.click(function(e){
-          e.preventDefault();
-  
-          var id = $(this).data('click'),
-              $target = $('[data-target="' + id + '"]');
-  
-        $allClick.removeClass(activeClass);
-        $allTarget.removeClass(activeClass);
-  
-        $target.addClass(activeClass);
-        $(this).addClass(activeClass);
+$("[data-group]").each(function () {
+  var $allTarget = $(this).find("[data-target]"),
+    $allClick = $(this).find("[data-click]"),
+    activeClass = "active";
 
-            
-        });
+  $allTarget.first().addClass(activeClass);
+  $allClick.first().addClass(activeClass);
+
+  $allClick.click(function (e) {
+    e.preventDefault();
+
+    var id = $(this).data("click"),
+      $target = $('[data-target="' + id + '"]');
+
+    $allClick.removeClass(activeClass);
+    $allTarget.removeClass(activeClass);
+
+    $target.addClass(activeClass);
+    $(this).addClass(activeClass);
   });
+});
 
 // BARRA DE PESQUISA
 
@@ -47,7 +42,6 @@ function search() {
 // MENU MOBILE
 
 class MobileNavbar {
-
   constructor(mobileMenu, navList, navLinks) {
     this.mobileMenu = document.querySelector(mobileMenu);
     this.navList = document.querySelector(navList);
@@ -60,8 +54,8 @@ class MobileNavbar {
   animateLinks() {
     this.navLinks.forEach((link) => {
       link.style.animation
-      ? (link.style.animation = "")
-      : (link.style.animation = 'navLinkFade 0.5s ease forwards 0.3s');
+        ? (link.style.animation = "")
+        : (link.style.animation = "navLinkFade 0.5s ease forwards 0.3s");
     });
   }
 
@@ -70,24 +64,17 @@ class MobileNavbar {
     this.animateLinks();
   }
 
-
-addClickEvent() {
-  this.mobileMenu.addEventListener("click", this.handleClick);
-
-}
-
-
-init() {
-  if(this.mobileMenu) {
-    this.addClickEvent();
+  addClickEvent() {
+    this.mobileMenu.addEventListener("click", this.handleClick);
   }
-  return this;
-}
+
+  init() {
+    if (this.mobileMenu) {
+      this.addClickEvent();
+    }
+    return this;
+  }
 }
 
-const mobileNavbar = new MobileNavbar(
-  ".btn-mobile",
-  "#menu",
-  "#menu li",
-);
+const mobileNavbar = new MobileNavbar(".btn-mobile", "#menu", "#menu li");
 mobileNavbar.init();
