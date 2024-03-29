@@ -926,12 +926,19 @@ P {
 
 @media (max-width: 575.98px) {
   /* -------------- index */
+
+  #logo {
+    margin-left: 20px;
+  }
+
   #intro h1 {
-    font-size: 3rem;
+    margin: 0 auto;
+    font-size: 3.4rem;
+    max-width: 95vw;
   }
 
   #intro p {
-    max-width: 90vw;
+    max-width: 95vw;
   }
 
   /* reserve já 575px */
@@ -1227,6 +1234,7 @@ P {
 
   .btn-mobile {
     display: block;
+    margin-right: 20px;
   }
 }
 
