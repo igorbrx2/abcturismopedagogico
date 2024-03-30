@@ -537,6 +537,7 @@
 
 .pct-principal h1 {
   width: 250px;
+  font-size: 1.2rem;
 }
 
 .pct-principal.active {
@@ -560,11 +561,13 @@
 
 .ft-preco-data img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .pct-princ-img {
   max-width: 700px;
-  width: auto;
+  height:450px;
 }
 
 .data {
@@ -578,7 +581,7 @@
 }
 
 .data p {
-  text-wrap: wrap;
+  text-wrap: nowrap;
   font-size: 1.2rem;
   font-weight: 900;
   letter-spacing: 2px;
@@ -603,7 +606,7 @@
 .valores {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
 }
 
@@ -619,7 +622,7 @@
   color: var(--branco-puro);
   background-color: var(--azul-links);
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 10px 20px;
   border-radius: 45px;
 }
@@ -631,10 +634,11 @@
 }
 
 .preco-data {
+  max-width: 700px;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 
 .dsc-reserve {
@@ -1067,6 +1071,7 @@ P {
 
 }
 
+
 @media (max-width: 991.98px) {
 
   /* --------- index 991px */
@@ -1343,9 +1348,16 @@ P {
 
 /* ------------- pagina pacotes 575px */
 
+.preco-data {
+  flex-direction: column;
+  max-width: 95vw;
+  justify-content: center;
+}
+
 .data {
   margin: 0 auto;
 }
+
 
 .preco {
   margin-top: 20px;
@@ -1365,6 +1377,14 @@ P {
     font-size: 2.5rem;
     margin-bottom: 10px;
     max-width: 95vw;
+  }
+
+  .reserve-agr a {
+    font-size: 1.4rem;
+  }
+
+  .preco-data {
+    flex-direction: column;
   }
 
 }
