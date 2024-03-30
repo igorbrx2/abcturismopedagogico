@@ -800,6 +800,28 @@
 
 /* --------------------- BLOG POST */
 
+.voltar-p-blog {
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+  border: 2px solid var(--cinza-escuro);
+  padding: 10px;
+  border-radius: 45px;
+  margin: 50px auto;
+}
+
+.voltar-p-blog img {
+  width: 20px;
+}
+
+.voltar-p-blog p {
+  color: var(--cinza-escuro);
+  font-size: 1.1rem;
+letter-spacing: 1px;
+font-weight: 700;
+}
+
 .blog-post {
   max-width: 1000px;
   display: flex;
@@ -833,7 +855,6 @@ P {
   line-height: 1.3;
   font-weight: 900;
   color: var(--cinza-escuro);
-  margin-top: 50px;
   margin-bottom: 50px;
 }
 
@@ -1166,6 +1187,11 @@ P {
   /* fim pagina blog 991px */
   
   /* ------------ blog post 991px */
+
+  .container-btn-voltar {
+    max-width: 95vw;
+    margin: 0 auto;
+  }
   
   .blog-post {
     max-width: 95vw;
