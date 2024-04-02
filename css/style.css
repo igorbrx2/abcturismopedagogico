@@ -1,3 +1,42 @@
+
+/* BOTOES DO HEADER POR PÁGINA*/
+
+.pg-inicio #menu li:nth-child(1) a {
+
+color: var(--branco-puro);
+background-color: var(--azul-links);
+border-radius: 5px;
+padding: 10px 15px;
+}
+
+.pg-sobre #menu li:nth-child(2) a {
+color: var(--branco-puro);
+background-color: var(--azul-links);
+border-radius: 5px;
+padding: 10px 15px;
+}
+
+.pg-pacotes #menu li:nth-child(3) a {
+color: var(--branco-puro);
+background-color: var(--azul-links);
+border-radius: 5px;
+padding: 10px 15px;
+}
+
+.pg-blog #menu li:nth-child(4) a {
+color: var(--branco-puro);
+background-color: var(--azul-links);
+border-radius: 5px;
+padding: 10px 15px;
+}
+
+.pg-blog-post #menu li:nth-child(4) a {
+color: var(--branco-puro);
+background-color: var(--azul-links);
+border-radius: 5px;
+padding: 10px 15px;
+}
+
 /* HEADER */
 #logo img {
   width: 50px;
