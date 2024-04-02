@@ -68,6 +68,7 @@ $(document).ready(function () {
   startAutoRotate();
 });
 
+
 // CONTROLADOR DE CARROSSEL (PREV E NEXT BTN)
 
 document.addEventListener("DOMContentLoaded", function () {
