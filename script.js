@@ -22,6 +22,90 @@ $("[data-group]").each(function () {
   });
 });
 
+// GIRAR DEPOIMENTOS ENQUANTO NÃO ESTIVEREM CLICADOS
+
+$(document).ready(function () {
+  var $allTarget = $("[data-group='depoimentos']").find("[data-target]");
+  var $allClick = $("[data-group='depoimentos']").find("[data-click]");
+  var activeClass = "active";
+  var currentIndex = 0;
+  var autoRotateInterval;
+
+  function activateItem(index) {
+    $allClick.removeClass(activeClass);
+    $allTarget.removeClass(activeClass);
+
+    $allTarget.eq(index).addClass(activeClass);
+    $allClick.eq(index).addClass(activeClass);
+  }
+
+  function startAutoRotate() {
+    autoRotateInterval = setInterval(function () {
+      currentIndex++;
+      if (currentIndex === $allTarget.length) {
+        currentIndex = 0;
+      }
+      activateItem(currentIndex);
+    }, 3000);
+  }
+
+  function stopAutoRotate() {
+    clearInterval(autoRotateInterval);
+  }
+
+  $allClick.click(function (e) {
+    e.preventDefault();
+    stopAutoRotate();
+
+    var id = $(this).data("click");
+    var index = $allClick.index(this);
+
+    activateItem(index);
+
+    setTimeout(startAutoRotate, 7000);
+  });
+
+  startAutoRotate();
+});
+
+// CONTROLADOR DE CARROSSEL (PREV E NEXT BTN)
+
+document.addEventListener("DOMContentLoaded", function () {
+  const prevBtn = document.querySelector(".pre-btn");
+  const nextBtn = document.querySelector(".nxt-btn");
+  const content = document.querySelector("#carrossel-pcts");
+
+  const scrollAmount = 620; // Ajuste conforme necessário
+  const scrollSpeed = 500; // Ajuste conforme necessário
+
+  prevBtn.addEventListener("click", function () {
+    content.scrollTo({
+      left: content.scrollLeft - scrollAmount,
+      behavior: "smooth",
+    });
+  });
+
+  nextBtn.addEventListener("click", function () {
+    content.scrollTo({
+      left: content.scrollLeft + scrollAmount,
+      behavior: "smooth",
+    });
+  });
+});
+// ROLAR PARA CIMA AO CLICAR (PACOTES)
+
+window.addEventListener("scroll", function () {
+  let scroll = document.querySelector(".pct-item");
+  scroll.classList.toggle("active", window.scrollY > 250);
+});
+
+function backTop() {
+  window.scrollTo({
+    top: 320,
+    behavior: "smooth",
+  });
+}
+
 // BARRA DE PESQUISA
 
 function search() {
