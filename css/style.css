@@ -567,6 +567,7 @@
 .pct-principal h1 {
   width: 250px;
   font-size: 1.2rem;
+  line-height: 1.1;
 }
 
 .pct-principal.active {
@@ -1313,6 +1314,10 @@ P {
   display: none;
 }
 
+.reserve-agr {
+  margin: 0 auto;
+}
+
 }
 @media (max-width: 575.98px) {
   /* -------------- index */
@@ -1433,14 +1438,22 @@ P {
   max-width: 95vw;
 }
 
+.reserve-agr {
+  margin: 0 auto;
 }
 
-@media (max-width: 350px) {
+}
+
+@media (max-width: 360px) {
   #intro h1 {
     margin: 0 auto;
     font-size: 2.5rem;
     margin-bottom: 10px;
     max-width: 95vw;
+  }
+
+  .reserve-agr {
+    margin: 0 auto;
   }
 
   .reserve-agr a {
