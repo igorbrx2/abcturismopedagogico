@@ -1,3 +1,17 @@
+// ROLAR DIRETO PARA O CONTEÚDO AO TROCAR DE PÁGINA
+
+document.addEventListener("DOMContentLoaded", function(event) { 
+  var elementos = document.querySelectorAll(".cntt-pacote");
+  if (elementos.length > 0) {
+      var elemento = elementos[0];
+      var posY = elemento.offsetTop - 50; // Vai para o topo do elemento
+      window.scrollTo({
+          top: posY,
+          behavior: 'smooth'
+      });
+  }
+});
+
 // EVIDENCIAR AO CLICAR (DEPOIMENTOS, PACOTES ETC)
 
 $("[data-group]").each(function () {

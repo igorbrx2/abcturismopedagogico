@@ -1,0 +1,492 @@
+/* RESPONSIVIDADE */
+
+@media (max-width: 1220px) {
+
+    .ctd-post {
+      max-width: 700px;
+      width: 100%;
+    }
+  
+    #posts-container {
+      flex-wrap: nowrap;
+      justify-content: start;
+      gap: 10px;
+      overflow-x: auto; 
+      max-width: 95vw;
+      margin: 50px auto;
+     }
+     
+     .post-card {
+       margin-bottom: 10px;
+       margin-left: auto;
+       margin-right: auto;
+     }
+     
+     #posts-container::-webkit-scrollbar {
+       height: 10px;
+       width: 10px;
+     }
+     #posts-container::-webkit-scrollbar-track {
+       border-radius: 5px;
+       background-color: #ebebeb;
+     }
+     
+     #posts-container::-webkit-scrollbar-track:hover {
+       background-color: #cfd1d2;
+     }
+     
+     #posts-container::-webkit-scrollbar-track:active {
+       background-color: #cfd1d2;
+     }
+     
+     #posts-container::-webkit-scrollbar-thumb {
+       border-radius: 7px;
+       background-color: #f94f1b;
+     }
+     
+     #posts-container::-webkit-scrollbar-thumb:hover {
+       background-color: #f96d3a;
+     }
+     
+     #posts-container::-webkit-scrollbar-thumb:active {
+       background-color: #f94107;
+     }
+  
+     #equipe {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      max-width: 95vw;
+      justify-content: start;
+      gap: 30px;
+    }
+    
+    .card-membro-equipe {
+      margin-bottom: 10px;
+    }
+    
+    #equipe::-webkit-scrollbar {
+      height: 10px;
+      width: 10px;
+    }
+    #equipe::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background-color: #ebebeb;
+    }
+    
+    #equipe::-webkit-scrollbar-track:hover {
+      background-color: #cfd1d2;
+    }
+    
+    #equipe::-webkit-scrollbar-track:active {
+      background-color: #cfd1d2;
+    }
+    
+    #equipe::-webkit-scrollbar-thumb {
+      border-radius: 7px;
+      background-color: #f94f1b;
+    }
+    
+    #equipe::-webkit-scrollbar-thumb:hover {
+      background-color: #f96d3a;
+    }
+    
+    #equipe::-webkit-scrollbar-thumb:active {
+      background-color: #f94107;
+    }
+  
+    #crsl-pcts {
+      max-width: 95vw;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: start;
+      gap: 30px;
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+  
+    #crsl-pcts .pct-item {
+      transform: scale(1);
+    }
+  
+    #crsl-pcts::-webkit-scrollbar {
+      height: 10px;
+      width: 10px;
+    }
+    #crsl-pcts::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background-color: #ebebeb;
+    }
+    
+    #crls-pcts::-webkit-scrollbar-track:hover {
+      background-color: #cfd1d2;
+    }
+    
+    #crsl-pcts::-webkit-scrollbar-track:active {
+      background-color: #cfd1d2;
+    }
+    
+    #crsl-pcts::-webkit-scrollbar-thumb {
+      border-radius: 7px;
+      background-color: #f94f1b;
+    }
+    
+    #crsl-pcts::-webkit-scrollbar-thumb:hover {
+      background-color: #f96d3a;
+    }
+    
+    #crsl-pcts::-webkit-scrollbar-thumb:active {
+      background-color: #f94107;
+  
+  }
+  
+  }
+  
+  #carrossel-pcts {
+    max-width: 80vw;}
+  
+  
+  @media (max-width: 991.98px) {
+  
+    /* --------- index 991px */
+    
+    #intro h1 {
+      margin: 0 auto;
+      font-size: 5rem;
+      max-width: 95vw;
+    }
+    
+    #intro p {
+      max-width: 90vw;
+    }
+    
+    #crsl-pcts {
+      margin-top: 0;
+      margin-bottom: 50px;
+    }
+    
+    .ctd-post {
+      max-width: 700px;
+      width: 100%;
+    }
+    
+    /* ------------ pacotes 991px */
+    
+    .dsc-reserve {
+      max-width: 700px;
+      width: 100%;
+    }
+    
+    /* ------------ sobre 991px */
+    
+    .sobre-img {
+      max-width: 700px;
+      width: auto;
+    }
+    
+    
+    #sobre p {
+      max-width: 95vw;
+    }
+    
+    #equipe {
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      max-width: 95vw;
+      justify-content: start;
+      gap: 30px;
+    }
+    
+    .card-membro-equipe {
+      margin-bottom: 10px;
+    }
+    
+    #equipe::-webkit-scrollbar {
+      height: 10px;
+      width: 10px;
+    }
+    #equipe::-webkit-scrollbar-track {
+      border-radius: 5px;
+      background-color: #ebebeb;
+    }
+    
+    #equipe::-webkit-scrollbar-track:hover {
+      background-color: #cfd1d2;
+    }
+    
+    #equipe::-webkit-scrollbar-track:active {
+      background-color: #cfd1d2;
+    }
+    
+    #equipe::-webkit-scrollbar-thumb {
+      border-radius: 7px;
+      background-color: #f94f1b;
+    }
+    
+    #equipe::-webkit-scrollbar-thumb:hover {
+      background-color: #f96d3a;
+    }
+    
+    #equipe::-webkit-scrollbar-thumb:active {
+      background-color: #f94107;
+    }
+    
+    /* ------------- blog 991px */
+    
+    .pesquisa {
+      max-width: 90vw;
+    }
+    
+    /* fim pagina blog 991px */
+    
+    /* ------------ blog post 991px */
+  
+    .container-btn-voltar {
+      max-width: 95vw;
+      margin: 0 auto;
+    }
+    
+    .blog-post {
+      max-width: 95vw;
+    }
+    
+    }
+  
+  @media (max-width: 767.98px) {
+  
+    /* ---------- index 767 */
+  
+    #logo {
+      margin-left: 20px;
+    }
+  
+    #intro h1 {
+      font-size: 5rem;
+      max-width: 95vw;
+    }
+  
+    #intro p {
+      max-width: 95vw;
+    }
+  
+    .rd-sociais {
+      margin: 0 auto;
+      transform: scale(1.3);
+    }
+  
+    #menu {
+      position: absolute;
+      padding-top: 7vh;
+      top: 7vh;
+      right: 0;
+      width: 50vw;
+      height: 92vh;
+      background: var(--branco-puro);
+      flex-direction: column;
+      align-items: center;
+      transform: translateX(100%);
+      transition: transform 0.3s ease-in;
+    }
+  
+    #menu.active {
+      transform: translateX(0);
+    }
+  
+    #menu li {
+      margin-left: 0;
+      opacity: 0;
+    }
+  
+    @keyframes navLinkFade {
+      from {
+        opacity: 0;
+        transform: translateX(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  
+    .btn-mobile {
+      display: block;
+      margin-right: 20px;
+    }
+  
+    /* reserve já 767px */
+    #crsl-pcts {
+      max-width: 95vw;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      justify-content: start;
+      gap: 10px;
+    }
+  
+    #crsl-pcts .pct-item {
+      transform: scale(1);
+    }
+  
+    #carrossel-pcts {
+      max-width: 1200px;
+  }
+  
+  .pre-btn, .nxt-btn {
+    display: none;
+  }
+  
+  .reserve-agr {
+    margin: 0 auto;
+  }
+  
+  }
+  @media (max-width: 575.98px) {
+    /* -------------- index */
+  
+    #logo {
+      margin-left: 20px;
+    }
+  
+    #intro h1 {
+      margin: 0 auto;
+      font-size: 3rem;
+      max-width: 95vw;
+    }
+  
+    #intro p {
+      max-width: 95vw;
+    }
+  
+    #crsl-pcts .pct-item {
+      transform: scale(1);
+    }
+  /* fim reserve já 575px */
+  
+  /* depoimentos 575px */
+  .depoimentos {
+    gap: 15px;
+  }
+  /* fim depoimentos 575px */
+  
+  /* ultimo post 575px */
+  
+  .ultimo-post {
+    max-width: 100vw;
+  }
+  
+  .ultimo-post img {
+    max-width: 100vw;
+  }
+  
+  .ctd-post {
+    width: 100vw;
+  }
+  
+  .ctd-post h2 {
+    max-width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 10px;
+  }
+  
+  .ctd-post p {
+    max-width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    font: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .ctd-post a {
+    padding-left: 10px;
+  }
+  
+  /* fim ultimo post 575px */
+  
+  /* footer 575px */
+  
+  #footer {
+    align-items: center;
+  }
+  
+  #ftr-ld-esq, #ftr-ld-dir {
+    flex-direction: column;
+    max-width: 40vw;
+    gap: 5px;
+  }
+  
+  #ftr-ld-esq img {
+    align-self: flex-start;
+    width: 40px;
+  }
+  
+  
+  #ftr-ld-esq p {
+    text-wrap: wrap;
+    text-align: start;
+  }
+  
+  #ftr-ld-dir p {
+    text-wrap: wrap;
+  }
+  
+  /* botao zap 575px */
+  .btn-wpp {
+    bottom: 170px;
+  }
+  /* fim botao zap 575px */
+  
+  /* ------------- pagina pacotes 575px */
+
+  .intro-pcts p {
+    max-width: 95vw;
+  }
+  
+  .preco-data {
+    flex-direction: column;
+    max-width: 95vw;
+    justify-content: center;
+  }
+  
+  .data {
+    margin: 0 auto;
+  }
+  
+  
+  .preco {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .dsc-reserve {
+    max-width: 95vw;
+  }
+  
+  .reserve-agr {
+    margin: 0 auto;
+  }
+  
+  }
+  
+  @media (max-width: 360px) {
+    #intro h1 {
+      margin: 0 auto;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      max-width: 95vw;
+    }
+  
+    .reserve-agr {
+      margin: 0 auto;
+    }
+  
+    .reserve-agr a {
+      font-size: 1.4rem;
+    }
+  
+    .preco-data {
+      flex-direction: column;
+    }
+  
+  }
+  
+  
