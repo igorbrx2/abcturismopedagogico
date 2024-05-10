@@ -263,7 +263,8 @@ padding: 10px 15px;
   overflow-x: auto;
   gap: 10px;
   align-items: center;
-  margin: 50px auto;
+  margin: 0 auto;
+  margin-bottom: 170px;
   scroll-behavior: smooth;
   transition: transform 0.5s ease;
 }
